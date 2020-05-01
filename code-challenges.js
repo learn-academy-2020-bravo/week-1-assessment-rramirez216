@@ -9,7 +9,22 @@
 var temp1 = 35
 var temp2 = 350
 var temp3 = 212
-// a new change
+
+// create a function that takes in numbers as an argument and compares it to the boiling point value
+const boilingPoint = (temp) => {
+    // compare the parameter to check if it is below boiling point
+    if(temp < 212){
+        return `${temp} is below boiling point`
+        // check if it is above boiling point 
+    } else if (temp > 212) {
+        return `${temp} is above boiling point`
+        // check to see if it is at boiling point
+    } else if (temp === 212) {
+        return `${temp} is at boiling point`
+    }
+}
+// log it to the console
+console.log(boilingPoint(temp3));
 
 
 
